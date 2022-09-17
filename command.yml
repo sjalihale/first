@@ -1,0 +1,10 @@
+---
+ - name: Command file
+   hosts: all
+   become: yes
+   tasks:
+     - name: run commands
+       command: date
+     - name: execute
+       command: yum install epel-release -y
+...

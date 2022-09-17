@@ -1,0 +1,9 @@
+---
+ - name: Copy File
+   hosts: all
+   tasks:
+     - name: Copy sam.txt
+       copy: 
+         src: sam.txt
+         dest: /home/ansible/
+...

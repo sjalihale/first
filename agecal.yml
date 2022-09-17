@@ -1,0 +1,12 @@
+---
+  - name: Age Calcculator
+    hosts: all
+    vars: 
+      age: 26
+    tasks: 
+         
+        - command: ' echo "child" '
+          when: ' age < 18 '
+        - command: ' echo "Adult" '
+          when: ' age > 18 '
+...         
